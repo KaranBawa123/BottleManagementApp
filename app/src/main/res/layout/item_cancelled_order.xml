@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Invoice Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invoice No."
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/invoiceNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12345"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John Doe"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Phone Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9876543210"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New York"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Item Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item A"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Bottle Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottle Type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/bottleType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="500ml"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Quantity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Rate -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="250"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <!-- Cancel Reason -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Reason:"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/cancelReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Customer request"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bottle Type:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:id="@+id/tv_bottle_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fetching..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Current Stock:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:id="@+id/tv_current_stock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fetching..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Requested Stock:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:id="@+id/tv_requested_stock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fetching..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Worker Name:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:id="@+id/tv_worker_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fetching..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Worker Phone:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:id="@+id/tv_worker_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fetching..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Approve"
+                android:backgroundTint="@color/green"
+                android:textColor="@android:color/white"
+                />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject"
+                android:backgroundTint="@color/red"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

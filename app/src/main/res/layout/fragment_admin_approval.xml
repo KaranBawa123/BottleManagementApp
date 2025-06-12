@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AdminApprovalFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="Handle Approvals"
+        app:titleTextColor="@android:color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/stock_edit_count"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/stockedittv"
+        app:layout_constraintEnd_toEndOf="@id/stockedittv"
+        app:layout_constraintStart_toEndOf="@id/stockedittv"
+        />
+
+    <TextView
+        android:id="@+id/stockedittv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Stock Edit Requests >>>"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/user_auth_count"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/userauthtv"
+        app:layout_constraintEnd_toEndOf="@id/userauthtv"
+        app:layout_constraintStart_toEndOf="@id/userauthtv"
+        />
+
+    <TextView
+        android:id="@+id/userauthtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alata"
+        android:text="User Registration Requests >>>"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stockedittv" />
+
+    <TextView
+        android:id="@+id/order_request_count"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/orderRequeststv"
+        app:layout_constraintEnd_toEndOf="@id/orderRequeststv"
+        app:layout_constraintStart_toEndOf="@id/orderRequeststv"
+        />
+
+    <TextView
+        android:id="@+id/orderRequeststv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alata"
+        android:text="Customer Orders Requests >>>"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userauthtv"
+        />
+
+    <TextView
+        android:id="@+id/allOrderstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alata"
+        android:text="All Orders >>>"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderRequeststv"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".Fragments.DataFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="Previous Bottle Counts"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alata"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txt1" />
+
+    <LinearLayout
+        android:id="@+id/dateButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:layout_marginEnd="10dp"
+            style="@style/Widget.MaterialComponents.Button"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/endDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            style="@style/Widget.MaterialComponents.Button"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateButtonContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/downloadIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/download"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

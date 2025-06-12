@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "854520614037",
+    "firebase_url": "https://hillwaterplant-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hillwaterplant",
+    "storage_bucket": "hillwaterplant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854520614037:android:1bd5fcc5a7ea74df611f9c",
+        "android_client_info": {
+          "package_name": "com.example.hillwater"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjTFTRztBu-60mHtfIQpTWku6Qf5pLWto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854520614037:android:43d9fddf8dab8351611f9c",
+        "android_client_info": {
+          "package_name": "com.hill.water"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjTFTRztBu-60mHtfIQpTWku6Qf5pLWto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

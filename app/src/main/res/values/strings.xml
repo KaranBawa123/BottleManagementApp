@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">HillWater</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="item_names">
+        <item>Water Bottles</item>
+    </string-array>
+
+    <string-array name="bottle_types">
+        <item>Select Bottle Type</item>
+        <item>1L(12piece)</item>
+        <item>250ml(24piece)</item>
+        <item>500ml(24piece)</item>
+        <item>5L(1piece)</item>
+    </string-array>
+
+    <string-array name="roles_array">
+        <item>Worker</item>
+    </string-array>
+
+    <string-array name="invoice_filter_options">
+        <item>Download</item>
+        <item>Unpaid Dispatches</item>
+        <item>Paid Dispatches</item>
+        <item>Cancelled Orders</item>
+    </string-array>
+
+    <string name="google_maps_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA1dQ3nLf0HDkiolHRz8wkOwKdEC5kD1XY</string>
+
+</resources>
